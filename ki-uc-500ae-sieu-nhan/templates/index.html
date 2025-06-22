@@ -67,6 +67,11 @@
     </style>
 </head>
 <body>
+    <audio autoplay loop hidden>
+  <source src="{{ url_for('static', filename='music/background.mp3') }}" type="audio/mpeg">
+  Trình duyệt của bạn không hỗ trợ âm thanh.
+</audio>
+
     <h1>📸 Ký Ức 500ae </h1>
     <div class="upload-box">
         <form method="POST" enctype="multipart/form-data">
